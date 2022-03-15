@@ -9,7 +9,7 @@ public class ReverseEvenWords {
 
 		String newStr = "";
 		String[] odd = new String[str.length];
-		for (int i = 0; i <= str.length - 1; i++) {
+		for (int i = 0; i < str.length; i++) {
 			if (i % 2 != 0) { // Check odd or even index
 				String rev = "";
 				char[] char1 = str[i].toCharArray(); //String to Char Array
@@ -18,17 +18,13 @@ public class ReverseEvenWords {
 					rev = rev + char1[j]; //Storing characters in reverse order
 				}
 				newStr = newStr + rev + " ";
+				System.out.print(rev +" ");
+			}else {
+				newStr = newStr + str[i]+" ";
+				System.out.print(str[i] +" ");
 			}
-			odd[i] = str[i].concat(" ");
-		}
-		System.out.println(newStr); //Convert words to character array if the position is even
-
-		
-		//print the odd word as it is(concatenate space at the end).
-		  for (int k =0 ; k<odd.length-1;k++) { 
-			  System.out.print(odd[k]);		  
-		  }
-		 
+			
+		}		 
 	}
 
 }
