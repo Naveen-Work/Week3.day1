@@ -8,7 +8,7 @@ public class ReverseEvenWords {
 		String[] str = test.split(" ");
 
 		String newStr = "";
-		String[] odd = new String[str.length];
+		//String[] odd = new String[str.length];
 		for (int i = 0; i < str.length; i++) {
 			if (i % 2 != 0) { // Check odd or even index
 				String rev = "";
